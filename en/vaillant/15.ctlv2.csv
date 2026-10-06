@@ -79,7 +79,7 @@ r,,,DisplayedOutsideTemp,outside temperature,,,b524,020000007300,ign,,IGN:4,,,,v
 r,,,KeyCodeforConfigMenu,code for installer menu,,,b524,020000007600,ign,,IGN:4,,,,value,,UIN,,,000-999; code for the installer's menues
 w,,,KeyCodeforConfigMenu,code for installer menu,,,b524,020100007600,value,,UIN,,,000-999; code for the installer's menues
 r,,,OutsideTempAvg,average outside temperature,,,b524,020000009500,ign,,IGN:4,,,,value,,EXP,,°C,rounded average outsidetemperature (updated every 3h)
-w,,,OutsideTempAvg,average outside temperature,,,b524,020100009500,value,,EXP,,°C,rounded average outsidetemperature (updated every 3h)
+# w,,,OutsideTempAvg,average outside temperature,,,b524,020100009500,value,,EXP,,°C,rounded average outsidetemperature (updated every 3h)
 r,,,MaintenanceDue,maintenance due,,,b524,020000009600,ign,,IGN:4,,,,value,,UCH,0=no;1=yes,,shows whether maintenance is due
 r,,,HwcStorageTempTop,hwc storage temperature top,,,b524,020000009d00,ign,,IGN:4,,,,value,,EXP,,°C,temperature sensor HWC storage top
 r,,,HwcStorageTempBottom,storage temperature bottom,,,b524,020000009e00,ign,,IGN:4,,,,value,,EXP,,°C,temperature sensor HWC storage bottom
@@ -444,3 +444,5 @@ w,,,Z3Timer_Sunday,timer heating sunday,,,b555,a6020006,slotindex,,UCH,,,index o
 r,,,Currenterror,Current errors,,,b503,0001,error,,UIN,,,error number,error_1,,UIN,,,error number,error_2,,UIN,,,error number,error_3,,UIN,,,error number,error_4,,UIN,,,error number
 r,,,Errorhistory,Error_History,,,b503,0101,index,m,UCH,,,,status,,UCH,,,Status,time,,VTM,,,time,date,,HDA:3,,,date,error,,UIN,,,error number
 w,,install,Clearerrorhistory,Clear error history,,,b503,0201,cleared,s,UCH,0=no;1=yes,,
+r,,,Z2OpModeCooling,cooling operation mode zone 2,,,b524,020003010100,ign,,IGN:4,,,,value,,UIN,0=off;1=auto;2=day;3=night,,operation mode for cooling of zone 2
+w,,,Z2OpModeCooling,cooling operation mode zone 2,,,b524,020103010100,value,,UIN,0=off;1=auto;2=day;3=night,,operation mode for cooling of zone 2
